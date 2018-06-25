@@ -22,10 +22,10 @@ public class App {
 
     public static void main(String[] args) throws IOException {
         //设置代理
-        System.setProperty("http.proxyHost", "localhost");
-        System.setProperty("http.proxyPort", "8080");
+//        System.setProperty("http.proxyHost", "localhost");
+//        System.setProperty("http.proxyPort", "8080");
         //url路径
-        String urlLocation = "http://gb.cri.cn/42071/2015/07/07/5311s5022627.htm";
+        String urlLocation = "https://item.btime.com/31teipc06t19nq9iks4ppe1bh13";
         String formatted_text = getText(urlLocation);
         System.out.println(formatted_text);
     }
@@ -40,5 +40,5 @@ public class App {
         Formatter format = new Formatter();
         return format.get_formatted_text(bestNode);
     }
-
+    
 }

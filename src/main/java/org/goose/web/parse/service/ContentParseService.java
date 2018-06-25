@@ -68,7 +68,9 @@ public class ContentParseService {
         }else {
             formatted_text = cache.get(url);
         }
+        System.out.println("解析文本如下：\n"+formatted_text);
         formatted_text=formatted_text.replaceAll("\n", "<br/>");
+        System.out.println("返回文本如下：\n"+formatted_text);
         operateLogDao.doLog(modeId,url,formatted_text);
 
         try {
